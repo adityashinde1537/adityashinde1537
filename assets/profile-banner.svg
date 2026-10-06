@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="320" viewBox="0 0 1200 320" role="img" aria-labelledby="title desc">
+  <title id="title">Aditya Shinde</title>
+  <desc id="desc">Building useful software. Learning through real projects.</desc>
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#101a2c" />
+      <stop offset="1" stop-color="#172c42" />
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#5eead4" />
+      <stop offset="1" stop-color="#93c5fd" />
+    </linearGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 H 0 V 40" fill="none" stroke="#dbeafe" stroke-opacity=".045" />
+    </pattern>
+    <clipPath id="corners"><rect width="1200" height="320" rx="20" /></clipPath>
+  </defs>
+  <g clip-path="url(#corners)">
+    <rect width="1200" height="320" fill="url(#background)" />
+    <rect x="800" width="400" height="320" fill="url(#grid)" />
+    <circle cx="1076" cy="164" r="154" fill="none" stroke="#5eead4" stroke-opacity=".10" />
+    <circle cx="1076" cy="164" r="111" fill="none" stroke="#93c5fd" stroke-opacity=".12" />
+    <path d="M 990 123 L 946 160 L 990 197 M 1120 123 L 1164 160 L 1120 197 M 1082 107 L 1038 213" fill="none" stroke="url(#accent)" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" opacity=".9" />
+    <rect x="58" y="50" width="36" height="4" rx="2" fill="#5eead4" />
+    <text x="108" y="58" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="700" letter-spacing="3" fill="#99f6e4">STUDENT DEVELOPER</text>
+    <text x="54" y="158" font-family="Arial, Helvetica, sans-serif" font-size="76" font-weight="700" letter-spacing="-2" fill="#f8fafc">Aditya Shinde</text>
+    <text x="58" y="207" font-family="Arial, Helvetica, sans-serif" font-size="24" fill="#cbd5e1">Building useful software. Learning through real projects.</text>
+    <text x="58" y="271" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="700" letter-spacing="2.4" fill="#94a3b8">AI &amp; LANGUAGE TECHNOLOGY</text>
+    <circle cx="373" cy="265" r="3" fill="#5eead4" />
+    <text x="393" y="271" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="700" letter-spacing="2.4" fill="#94a3b8">ANDROID</text>
+    <circle cx="504" cy="265" r="3" fill="#5eead4" />
+    <text x="524" y="271" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="700" letter-spacing="2.4" fill="#94a3b8">WEB</text>
+    <rect x="0" y="315" width="1200" height="5" fill="url(#accent)" />
+  </g>
+</svg>
