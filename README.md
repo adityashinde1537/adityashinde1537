@@ -1,5 +1,7 @@
 <p align="center">
-  <img src="./assets/profile-banner.svg" alt="Aditya Shinde — Building useful software. Learning through real projects." width="100%" />
+  <a href="https://github.com/adityashinde1537">
+    <img src="./assets/profile-banner.svg" alt="Aditya Shinde — Building useful software. Learning through real projects." width="100%" />
+  </a>
 </p>
 
 <div align="center">
