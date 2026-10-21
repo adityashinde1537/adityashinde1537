@@ -24,8 +24,12 @@ jobs:
           gradle-version: '8.10.2'
       - name: Ensure Android SDK platform
         run: |
-          echo "sdkmanager location: $(which sdkmanager)"
-          yes | sdkmanager 'platforms;android-35' 'build-tools;35.0.0'
+          echo "SDK: $ANDROID_HOME"
+          SDKMANAGER=$(find "${ANDROID_HOME:-/usr/local/lib/android/sdk}/cmdline-tools" -type f -name sdkmanager | head -1)
+          echo "SDK manager: $SDKMANAGER"
+          if [ -n "$SDKMANAGER" ]; then
+            yes | "$SDKMANAGER" 'platforms;android-35' 'build-tools;35.0.0' || test ${PIPESTATUS[1]} -eq 0
+          fi
       - name: Build installable APK
         run: gradle -p cresto-android :app:assembleDebug --no-daemon --stacktrace
       - name: Upload APK
